@@ -1,0 +1,44 @@
+{
+  "name": "iac-gen-cli",
+  "version": "1.0.0",
+  "description": "Generate Terraform and Ansible from natural language using AI",
+  "bin": {
+    "iac-gen": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "terraform",
+    "iac",
+    "infrastructure-as-code",
+    "ansible",
+    "cli",
+    "ai",
+    "devops",
+    "groq",
+    "llm"
+  ],
+  "author": "Kanishk Singh <kanishk2607@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.0"
+  }
+}
